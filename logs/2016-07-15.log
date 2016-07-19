@@ -1,0 +1,16 @@
+ERROR - 2016-07-15 09:18:12 - exception 'ErrorException' with message 'Undefined variable: this' in /var/www/html/App/Library/MessageHandler.php:55
+Stack trace:
+#0 /var/www/html/App/Library/MessageHandler.php(55): Yee\Yee::handleErrors(8, 'Undefined varia...', '/var/www/html/A...', 55, Array)
+#1 /var/www/html/App/Controllers/Activation/ActivationController.php(32): App\Library\MessageHandler::addMessage('success', 'Activation has ...')
+#2 [internal function]: ActivationController->indexAction('18cc49eb8415b57...')
+#3 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#5 [internal function]: ActivationController::___indexAction('18cc49eb8415b57...')
+#6 /var/www/html/Yee/Route.php(462): call_user_func_array('ActivationContr...', Array)
+#7 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#8 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#9 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 /var/www/html/index.php(48): Yee\Yee->execute()
+#13 {main}

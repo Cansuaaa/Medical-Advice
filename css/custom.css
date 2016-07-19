@@ -1,0 +1,13 @@
+.error{
+    background-color: rgba(255,50,50,0.7);
+}
+.success{
+    background-color: rgba(50,255,50,0.7);
+}
+#message{
+    padding: 5px 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+}

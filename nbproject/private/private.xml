@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/var/www/html/App/Models/Signup/SignupModel.php</file>
+            <file>file:/var/www/html/templates/pages/signup.tpl</file>
+            <file>file:/var/www/html/App/Controllers/Signup/SignupController.php</file>
+            <file>file:/var/www/html/js/scripts.js</file>
+            <file>file:/var/www/html/templates/common/footer.tpl</file>
+            <file>file:/var/www/html/App/Controllers/Login/LoginController.php</file>
+            <file>file:/var/www/html/App/Libraries/Mailer/Mailer.php</file>
+            <file>file:/var/www/html/App/Controllers/Ajax/AjaxLoginController.php</file>
+            <file>file:/var/www/html/config.php</file>
+            <file>file:/var/www/html/App/Libraries/Helpers.php</file>
+        </group>
+    </open-files>
+</project-private>

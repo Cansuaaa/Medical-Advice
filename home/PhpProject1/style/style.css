@@ -1,0 +1,32 @@
+body{
+    font-size: 28pt;
+}
+h1{
+    text-align: center;
+    color: blue;
+    font-size: 36pt;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 1s;
+}
+h1:hover{
+    border-bottom: 3px solid black;
+}
+p{
+    text-align: center;
+    color: blue;
+    transition: color 1s;
+}
+p:hover{
+    color: green;
+}
+.button{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+}
+div{
+    width: auto;
+}
+#tony{
+    color: purple;
+}
