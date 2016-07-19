@@ -23,7 +23,14 @@ class AjaxLoginController extends Controller
         );
         
         
+        
+        
+        
         $app->render('pages/login.tpl', $data);
     }
+    
+    public function testAction() {
+            echo "Test";
+        }
 
 }
