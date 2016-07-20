@@ -18,64 +18,25 @@ class AjaxModel
         $this->password = $password;
     }
     
-    public function userProperty() {
-        
-        $app= $this->app;
-        return $app->db['default']->where('email', $this->email)->getOne('users');
-    }
-    
-    
-     public function doesUserExist() // Razbiram dali ima syshtestvuvash user true/false
-    {
-        $app = $this->app;
-        $isUserExist = $this->userProperty();
-        
-        if($isUserExist){
-            return true;
-        }
-        return FALSE;
-    }
-    
-    
-   public function passwCompare(){
-       
-       $app = $this->app;
-       
-       if ($this->doesUserExist()) { //vzimam samo rezultata dali syshtestvuva takyv user
-           
-            $user = $this->userProperty(); // Vzimam masiva
-            if ($user['password'] == md5($this->password)) {
-               return true;
-            }
-       }
-       return false;
-   }
    
-
-   public function validateLogin() {
+        
+    
+   public function validate()
+   {
+       $app= $this->app;
+       $app->db['default']->where('email', $this->email);
+       $app->db['default']->where('password', md5( $this->password ) );
+       $app->db['default']->where('active', 1);
+               
+       $data = $app->db['default']->getOne('users');
        
-       if($this->doesUserExist() && $this->passwCompare())
+       if ( $data == NULL ) 
        {
-           return true;
+           return false;
+       } else {
+           return $data;
        }
-       return false;
-   }
-   
-    
-    public function isUserActive(){
        
-       $app = $this->app;
-       
-       if ($this->doesUserExist()) { //vzimam samo rezultata dali syshtestvuva takyv user
-           
-            $user = $this->userProperty(); // Vzimam masiva
-            if ($user['active'] == 1) {
-               return true;
-            }
-       }
-       return false;
    }
-        
-    
     
 }

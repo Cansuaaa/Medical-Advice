@@ -7,7 +7,12 @@ $('#loginForm').submit(function(e){
         data: $('#loginForm').serialize(),
         dataType: "json",
         success: function(data){
-            alert(data.error);
+            if( data.error )
+            {
+                $('#error').html( data.message ).fadeTo(1,1000);
+            } else {
+                window.location.replace("/myAccount");
+            }
         }
     });
     e.preventDefault();

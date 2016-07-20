@@ -3,11 +3,11 @@
 use Yee\Managers\Controller\Controller;
 use Yee\Managers\CacheManager;
 
-class HomeController extends Controller
+class myAccountController extends Controller
 {
      /**
-     * @Route('/')
-     * @Name('home.index')
+     * @Route('/myAccount')
+     * @Name('myAccount.index')
      */
     
     public function indexAction( )
@@ -15,18 +15,15 @@ class HomeController extends Controller
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
         
+        
+        
         $data = array(
-            "title" => "Home"
+            "title" => "MyAccount",
+            //'javascript' => $javascript,
         );
         
-        $_SESSION['ID'] = '55';
-        
-        $app->render('pages/home.tpl', $data );
+        $app->render('pages/myAccount.tpl', $data );
     }
-    
-    
-    
-    
-    
 }
+
 

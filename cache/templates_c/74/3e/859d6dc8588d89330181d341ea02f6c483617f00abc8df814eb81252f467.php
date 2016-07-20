@@ -54,13 +54,18 @@ class __TwigTemplate_743e859d6dc8588d89330181d341ea02f6c483617f00abc8df814eb8125
         // line 28
         echo twig_escape_filter($this->env, (isset($context["activation_code"]) ? $context["activation_code"] : null), "html", null, true);
         echo ">Click Here</a> to activate
+                    
+                    <p> localhost/activation/";
+        // line 30
+        echo twig_escape_filter($this->env, (isset($context["activation_code"]) ? $context["activation_code"] : null), "html", null, true);
+        echo " </p>
                 </div>
   
           </td>
         </tr>
 
 ";
-        // line 34
+        // line 36
         $this->env->loadTemplate("/mail/footer.tpl")->display($context);
     }
 
@@ -76,6 +81,6 @@ class __TwigTemplate_743e859d6dc8588d89330181d341ea02f6c483617f00abc8df814eb8125
 
     public function getDebugInfo()
     {
-        return array (  64 => 34,  55 => 28,  49 => 25,  35 => 14,  21 => 2,  19 => 1,);
+        return array (  69 => 36,  60 => 30,  55 => 28,  49 => 25,  35 => 14,  21 => 2,  19 => 1,);
     }
 }

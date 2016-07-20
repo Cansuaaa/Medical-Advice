@@ -10,36 +10,40 @@ class AjaxController extends Controller
      /**
      * @Route('/ajax/login')
      * @Name('ajax.index')
+     * @Method('post')
      */
     
     public function indexAction( )
     {
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
-        
+  
         $email = $app->request()->post('email');
         $password = $app->request()->post('password');
-        
+ 
         
         $ajaxModel = new AjaxModel($email,$password);
         
-        if(!$ajaxModel->validateLogin())
+        $ret = $ajaxModel->validate();
+        
+        if( $ret == false )
         {
             $error = "Your email/password are not correct!";
+            $data = array(
+                'error' => true,
+                'message'=> $error,
+            );
+        } else {
+            $data = array(
+                'error' => false
+            );
+            $_SESSION["islogged"] = true;
+            $_SESSION["username"] = $email;
         }
-        if (!$ajaxModel->isUserActive()) {
-            $error = "Activate your account!";
-        }
-        
-        
-//       $user = $ajaxModel->isUserActive();
-//       var_dump($error);
-//       die();
-        
-        $data = array(
-            'error' => $error,
-        );
         $app->response()->headers()->set('Content-Type', 'application/json');
         echo json_encode($data);
+        
+      
+        
     }
 }

@@ -41,7 +41,6 @@ class SignupController extends Controller
         
         /** @var SignUp Model */
         $signupModel = new SignupModel($email, $password, $rePassword);
-       
         
         if(!$signupModel->validateSignup()){
             MessageHandler::addMessage('error', 'Validation Error has occured.');
@@ -58,10 +57,10 @@ class SignupController extends Controller
                 'mail_title' => "Account Activation",
                 'mail_content' => "Activation code: ",
                 'mail_sender' => "It's me !",
-                'activation_code' => $signupModel->activationCode,
+                'activation_code' => $signupModel->getActivationCode(),
             );
 
-            $emailSender = new EmailSender('cansua@abv.bg','cansua@abv.bg','Account Activation', $mail_data, 'signup');
+            $emailSender = new EmailSender('cansua@abv.bg',$email,'Account Activation', $mail_data, 'signup');
             $emailSender->buildEmail()->sendEmail();
 
             MessageHandler::addMessage('success', 'Registration is successful.');

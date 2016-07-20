@@ -29,14 +29,14 @@ class SignupModel
         $db = $app->db['default'];
         $hasPass = md5($this->password);
               
-        $this->activationCode = sha1($this->email);
+        //$this->activationCode = sha1($this->email);
         $db->insert("users", array(
             'email' => $this->email,
             'password' => $hasPass,
             'active' => 0,
             'signupDate' => date("Y-m-d H:i:s"),
             'ip' => Helpers::get_client_ip(),
-            'activationCode' => $this->activationCode,
+            'activationCode' => $this->getActivationCode(),
         ));
     }
 
@@ -77,5 +77,10 @@ class SignupModel
             return TRUE;
         }
         return FALSE;
+    }
+    
+    public function getActivationCode() {
+        $hashAcCode = sha1($this->email);
+        return $hashAcCode;
     }
 }

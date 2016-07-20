@@ -19,7 +19,11 @@ class ActivationController extends Controller
         
         
         $activationModel = new ActivationModel($activationCode);
-         
+//        echo '1';
+//        var_dump($activationModel->doesActivationCodeExist());
+//        echo '2';
+//        die();
+        
         if($activationModel->doesActivationCodeExist()){
             $activationModel->activateAccount();
 

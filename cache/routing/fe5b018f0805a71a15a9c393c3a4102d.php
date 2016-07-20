@@ -4,10 +4,10 @@
 /**
  * Generated with RoutingCacheManager
  *
- * on 2016-07-19 07:34:32
+ * on 2016-07-20 01:10:40
  */
 
 $app = Yee\Yee::getInstance();
 
-$app->map("/ajax/login", "AjaxController::___indexAction")->via("GET")->name("ajax.index");
+$app->map("/ajax/login", "AjaxController::___indexAction")->via("POST")->name("ajax.index");
 

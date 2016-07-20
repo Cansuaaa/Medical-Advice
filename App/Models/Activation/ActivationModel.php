@@ -19,7 +19,7 @@ class ActivationModel
           'active' => 1,
           'activationCode' => ''
         );
-
+        
         $app->db['default']->where('activationCode', $this->activationCode)->update('users',$data);
 
     }
@@ -27,6 +27,7 @@ class ActivationModel
     public function doesActivationCodeExist()
     {
         $app = \Yee\Yee::getInstance();
+        
         if($app->db['default']->where('activationCode', $this->activationCode)->getOne('users')){
             return TRUE;
         }

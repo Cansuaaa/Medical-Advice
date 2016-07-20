@@ -26,6 +26,8 @@
                     <br>
                     
                     <a href=http://localhost/activation/{{activation_code}}>Click Here</a> to activate
+                    
+                    <p> localhost/activation/{{activation_code}} </p>
                 </div>
   
           </td>
