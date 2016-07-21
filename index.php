@@ -18,6 +18,7 @@ session_start();
     $app->view( new \Yee\Views\Twig() );
 
      $app->view->parserOptions = array(
+            'debug' => true,
             'charset' => 'utf-8',
             'cache' => __DIR__ . '/cache/templates_c',
             'auto_reload' => true,
@@ -25,7 +26,7 @@ session_start();
             'autoescape' => true
      );
 
-     $app->view->parserExtensions = array( new \Yee\Views\TwigExtension() );
+     $app->view->parserExtensions = array(new \Yee\Views\TwigExtension());
 
      /* we need the session variable exposed within templates */
      $twig = $app->view()->getEnvironment();

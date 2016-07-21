@@ -17,7 +17,7 @@ class LoginController extends Controller
         
         $javascript = array(
             '/js/login.js'
-            );
+        );
         
         $data = array(
             "title" => "Login",

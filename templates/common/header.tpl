@@ -26,7 +26,7 @@
         <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     </head>
     <body>
-    	<div class="loader">
+    	<div class="loader" >
     		<div class="spinner">
 			  <div class="double-bounce1"></div>
 			  <div class="double-bounce2"></div>
@@ -47,8 +47,13 @@
 						<div class="col-md-9 col-sm-9 columns text-right">
 							<ul class="menu">
 								<li><a href="/">Home</a></li>
+                                                                {% if session.islogged == false %} 
 								<li><a href="/login">Login</a></li>
-								<li><a href="/signup">Sign Up</a></li>
+                                                                <li><a href="/signup">Sign Up</a></li>
+                                                                 {% else %} 
+                                                                <li><a href="/logout">Logout</a></li>
+                                                                <li><a href="/myAccount">My account</a></li>
+                                                                 {% endif %} 
                                                                 <!--START OF DROPDOWN LINKS
 								<li class="has-dropdown"><a href="#">Dropdown</a>
 									<ul class="subnav">

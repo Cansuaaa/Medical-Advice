@@ -47,7 +47,7 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
         <script src=\"https://code.jquery.com/jquery-3.0.0.min.js\"></script>
     </head>
     <body>
-    \t<div class=\"loader\">
+    \t<div class=\"loader\" style=\"background-color: #c0a16b\">
     \t\t<div class=\"spinner\">
 \t\t\t  <div class=\"double-bounce1\"></div>
 \t\t\t  <div class=\"double-bounce2\"></div>
@@ -68,8 +68,22 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 \t\t\t\t\t\t<div class=\"col-md-9 col-sm-9 columns text-right\">
 \t\t\t\t\t\t\t<ul class=\"menu\">
 \t\t\t\t\t\t\t\t<li><a href=\"/\">Home</a></li>
+                                                                ";
+        // line 50
+        if (($this->getAttribute((isset($context["session"]) ? $context["session"] : null), "islogged") == false)) {
+            echo " 
 \t\t\t\t\t\t\t\t<li><a href=\"/login\">Login</a></li>
-\t\t\t\t\t\t\t\t<li><a href=\"/signup\">Sign Up</a></li>
+                                                                <li><a href=\"/signup\">Sign Up</a></li>
+                                                                 ";
+        } else {
+            // line 53
+            echo " 
+                                                                <li><a href=\"/logout\">Logout</a></li>
+                                                                <li><a href=\"/myAccount\">My account</a></li>
+                                                                 ";
+        }
+        // line 56
+        echo " 
                                                                 <!--START OF DROPDOWN LINKS
 \t\t\t\t\t\t\t\t<li class=\"has-dropdown\"><a href=\"#\">Dropdown</a>
 \t\t\t\t\t\t\t\t\t<ul class=\"subnav\">
@@ -193,6 +207,6 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
     public function getDebugInfo()
     {
-        return array (  30 => 10,  169 => 145,  100 => 79,  21 => 2,  19 => 1,);
+        return array (  86 => 56,  80 => 53,  73 => 50,  30 => 10,  19 => 1,);
     }
 }
