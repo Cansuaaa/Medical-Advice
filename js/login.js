@@ -9,6 +9,7 @@ $('#loginForm').submit(function(e){
         success: function(data){
             if( data.error )
             {
+                alert("login JS")
                 $('#error').html( data.message ).fadeTo(1,1000);
             } else {
                 window.location.replace("/myAccount");

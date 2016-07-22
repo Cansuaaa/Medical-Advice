@@ -25,7 +25,7 @@ class AjaxModel
    {
        $app= $this->app;
        $app->db['default']->where('email', $this->email);
-       $app->db['default']->where('password', md5( $this->password ) );
+       $app->db['default']->where('password', $this->password );
        $app->db['default']->where('active', 1);
                
        $data = $app->db['default']->getOne('users');

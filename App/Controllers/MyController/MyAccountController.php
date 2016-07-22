@@ -16,6 +16,30 @@ class MyAccountController extends Controller
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
         
+       
+        $myAccount = new MyAccountModel();
+        $accDetail = $myAccount->getAccountDetails();
+        
+//        var_dump($accDetail);
+//        die();
+        $data = array(
+            "title" => "MyAccount",
+            'userDetail' => $accDetail,
+        );
+        
+        $app->render('pages/myAccount.tpl', $data);
+    }
+    
+    /**
+     * @Route('/editMyAccount')
+     * @Name('editMyAccount.index')
+     */
+    
+    public function editMyAccount( )
+    {
+        /** @var Yee\Yee $yee */
+        $app = $this->getYee();
+        
         $javascript = array(
             '/js/myAccount.js'
         );
@@ -26,13 +50,15 @@ class MyAccountController extends Controller
 //        var_dump($accDetail);
 //        die();
         $data = array(
-            "title" => "MyAccount",
+            "title" => "EditAccount",
             'userDetail' => $accDetail,
             'javascript' => $javascript,
         );
         
-        $app->render('pages/myAccount.tpl', $data);
+        $app->render('pages/editMyAccount.tpl', $data);
     }
+    
+    
 }
 
 

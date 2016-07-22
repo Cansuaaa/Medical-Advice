@@ -47,7 +47,7 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
         <script src=\"https://code.jquery.com/jquery-3.0.0.min.js\"></script>
     </head>
     <body>
-    \t<div class=\"loader\" style=\"background-color: #c0a16b\">
+    \t<div class=\"loader\" >
     \t\t<div class=\"spinner\">
 \t\t\t  <div class=\"double-bounce1\"></div>
 \t\t\t  <div class=\"double-bounce2\"></div>
