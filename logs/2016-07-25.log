@@ -1,0 +1,277 @@
+ERROR - 2016-07-25 07:14:24 - exception 'ErrorException' with message 'Undefined index: username' in /var/www/html/App/Models/MyAccount/MyAccountModel.php:15
+Stack trace:
+#0 /var/www/html/App/Models/MyAccount/MyAccountModel.php(15): Yee\Yee::handleErrors(8, 'Undefined index...', '/var/www/html/A...', 15, Array)
+#1 /var/www/html/App/Controllers/MyController/MyAccountController.php(21): App\Models\myAccount\MyAccountModel->getAccountDetails()
+#2 [internal function]: MyAccountController->indexAction()
+#3 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#5 [internal function]: MyAccountController::___indexAction()
+#6 /var/www/html/Yee/Route.php(462): call_user_func_array('MyAccountContro...', Array)
+#7 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#8 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#9 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 /var/www/html/index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-25 08:54:53 - exception 'ErrorException' with message 'Undefined index: username' in /var/www/html/App/Models/MyAccount/MyAccountModel.php:15
+Stack trace:
+#0 /var/www/html/App/Models/MyAccount/MyAccountModel.php(15): Yee\Yee::handleErrors(8, 'Undefined index...', '/var/www/html/A...', 15, Array)
+#1 /var/www/html/App/Controllers/MyController/MyAccountController.php(21): App\Models\myAccount\MyAccountModel->getAccountDetails()
+#2 [internal function]: MyAccountController->indexAction()
+#3 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#5 [internal function]: MyAccountController::___indexAction()
+#6 /var/www/html/Yee/Route.php(462): call_user_func_array('MyAccountContro...', Array)
+#7 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#8 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#9 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 /var/www/html/index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-25 08:55:06 - exception 'ErrorException' with message 'Undefined index: username' in /var/www/html/App/Models/MyAccount/MyAccountModel.php:15
+Stack trace:
+#0 /var/www/html/App/Models/MyAccount/MyAccountModel.php(15): Yee\Yee::handleErrors(8, 'Undefined index...', '/var/www/html/A...', 15, Array)
+#1 /var/www/html/App/Controllers/MyController/MyAccountController.php(21): App\Models\myAccount\MyAccountModel->getAccountDetails()
+#2 [internal function]: MyAccountController->indexAction()
+#3 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#5 [internal function]: MyAccountController::___indexAction()
+#6 /var/www/html/Yee/Route.php(462): call_user_func_array('MyAccountContro...', Array)
+#7 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#8 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#9 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 /var/www/html/index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-25 09:45:02 - exception 'ErrorException' with message 'Undefined index: username' in /var/www/html/App/Models/MyAccount/MyAccountModel.php:15
+Stack trace:
+#0 /var/www/html/App/Models/MyAccount/MyAccountModel.php(15): Yee\Yee::handleErrors(8, 'Undefined index...', '/var/www/html/A...', 15, Array)
+#1 /var/www/html/App/Controllers/MyController/MyAccountController.php(21): App\Models\myAccount\MyAccountModel->getAccountDetails()
+#2 [internal function]: MyAccountController->indexAction()
+#3 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#5 [internal function]: MyAccountController::___indexAction()
+#6 /var/www/html/Yee/Route.php(462): call_user_func_array('MyAccountContro...', Array)
+#7 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#8 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#9 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 /var/www/html/index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-25 10:16:23 - exception 'ErrorException' with message 'Undefined index: username' in /var/www/html/App/Controllers/ajax/AjaxController.php:57
+Stack trace:
+#0 /var/www/html/App/Controllers/ajax/AjaxController.php(57): Yee\Yee::handleErrors(8, 'Undefined index...', '/var/www/html/A...', 57, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 /var/www/html/Yee/Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#7 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#8 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 /var/www/html/index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-25 10:16:42 - exception 'ErrorException' with message 'Undefined index: username' in /var/www/html/App/Controllers/ajax/AjaxController.php:57
+Stack trace:
+#0 /var/www/html/App/Controllers/ajax/AjaxController.php(57): Yee\Yee::handleErrors(8, 'Undefined index...', '/var/www/html/A...', 57, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 /var/www/html/Yee/Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#7 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#8 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 /var/www/html/index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-25 10:16:46 - exception 'ErrorException' with message 'Undefined index: username' in /var/www/html/App/Models/MyAccount/MyAccountModel.php:15
+Stack trace:
+#0 /var/www/html/App/Models/MyAccount/MyAccountModel.php(15): Yee\Yee::handleErrors(8, 'Undefined index...', '/var/www/html/A...', 15, Array)
+#1 /var/www/html/App/Controllers/MyController/MyAccountController.php(48): App\Models\myAccount\MyAccountModel->getAccountDetails()
+#2 [internal function]: MyAccountController->editMyAccount()
+#3 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___editMyAccoun...', Array)
+#5 [internal function]: MyAccountController::___editMyAccount()
+#6 /var/www/html/Yee/Route.php(462): call_user_func_array('MyAccountContro...', Array)
+#7 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#8 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#9 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 /var/www/html/index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-25 12:26:09 - exception 'ErrorException' with message 'Undefined index: username' in /var/www/html/App/Models/MyAccount/MyAccountModel.php:15
+Stack trace:
+#0 /var/www/html/App/Models/MyAccount/MyAccountModel.php(15): Yee\Yee::handleErrors(8, 'Undefined index...', '/var/www/html/A...', 15, Array)
+#1 /var/www/html/App/Controllers/MyController/MyAccountController.php(32): App\Models\myAccount\MyAccountModel->getAccountDetails()
+#2 [internal function]: MyAccountController->indexAction()
+#3 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#5 [internal function]: MyAccountController::___indexAction()
+#6 /var/www/html/Yee/Route.php(462): call_user_func_array('MyAccountContro...', Array)
+#7 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#8 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#9 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 /var/www/html/index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-25 13:27:52 - exception 'ErrorException' with message 'Undefined variable: name' in /var/www/html/App/Controllers/ajax/AjaxController.php:64
+Stack trace:
+#0 /var/www/html/App/Controllers/ajax/AjaxController.php(64): Yee\Yee::handleErrors(8, 'Undefined varia...', '/var/www/html/A...', 64, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 /var/www/html/Yee/Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#7 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#8 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 /var/www/html/index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-25 13:29:27 - exception 'ErrorException' with message 'Undefined variable: name' in /var/www/html/App/Controllers/ajax/AjaxController.php:64
+Stack trace:
+#0 /var/www/html/App/Controllers/ajax/AjaxController.php(64): Yee\Yee::handleErrors(8, 'Undefined varia...', '/var/www/html/A...', 64, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 /var/www/html/Yee/Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#7 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#8 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 /var/www/html/index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-25 13:30:00 - exception 'ErrorException' with message 'Undefined variable: name' in /var/www/html/App/Controllers/ajax/AjaxController.php:64
+Stack trace:
+#0 /var/www/html/App/Controllers/ajax/AjaxController.php(64): Yee\Yee::handleErrors(8, 'Undefined varia...', '/var/www/html/A...', 64, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 /var/www/html/Yee/Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#7 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#8 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 /var/www/html/index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-25 13:31:52 - exception 'ErrorException' with message 'Undefined variable: password' in /var/www/html/App/Controllers/ajax/AjaxController.php:74
+Stack trace:
+#0 /var/www/html/App/Controllers/ajax/AjaxController.php(74): Yee\Yee::handleErrors(8, 'Undefined varia...', '/var/www/html/A...', 74, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 /var/www/html/Yee/Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#7 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#8 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 /var/www/html/index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-25 13:32:09 - exception 'ErrorException' with message 'Undefined variable: password' in /var/www/html/App/Controllers/ajax/AjaxController.php:74
+Stack trace:
+#0 /var/www/html/App/Controllers/ajax/AjaxController.php(74): Yee\Yee::handleErrors(8, 'Undefined varia...', '/var/www/html/A...', 74, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 /var/www/html/Yee/Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#7 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#8 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 /var/www/html/index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-25 13:33:00 - exception 'ErrorException' with message 'Undefined variable: password' in /var/www/html/App/Controllers/ajax/AjaxController.php:74
+Stack trace:
+#0 /var/www/html/App/Controllers/ajax/AjaxController.php(74): Yee\Yee::handleErrors(8, 'Undefined varia...', '/var/www/html/A...', 74, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 /var/www/html/Yee/Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#7 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#8 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 /var/www/html/index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-25 13:38:33 - exception 'ErrorException' with message 'Undefined variable: password' in /var/www/html/App/Controllers/ajax/AjaxController.php:74
+Stack trace:
+#0 /var/www/html/App/Controllers/ajax/AjaxController.php(74): Yee\Yee::handleErrors(8, 'Undefined varia...', '/var/www/html/A...', 74, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 /var/www/html/Yee/Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#7 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#8 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 /var/www/html/index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-25 13:42:01 - exception 'ErrorException' with message 'Undefined variable: password' in /var/www/html/App/Controllers/ajax/AjaxController.php:74
+Stack trace:
+#0 /var/www/html/App/Controllers/ajax/AjaxController.php(74): Yee\Yee::handleErrors(8, 'Undefined varia...', '/var/www/html/A...', 74, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 /var/www/html/Yee/Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#7 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#8 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 /var/www/html/index.php(49): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-25 13:48:33 - exception 'ErrorException' with message 'Undefined variable: email' in /var/www/html/App/Models/MyAccount/MyAccountModel.php:51
+Stack trace:
+#0 /var/www/html/App/Models/MyAccount/MyAccountModel.php(51): Yee\Yee::handleErrors(8, 'Undefined varia...', '/var/www/html/A...', 51, Array)
+#1 /var/www/html/App/Controllers/ajax/AjaxController.php(68): App\Models\myAccount\MyAccountModel->updateDetails('firstName', 'Suuuu')
+#2 [internal function]: AjaxController->postUpdateMyAccount()
+#3 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#4 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#5 [internal function]: AjaxController::___postUpdateMyAccount()
+#6 /var/www/html/Yee/Route.php(462): call_user_func_array('AjaxController:...', Array)
+#7 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#8 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#9 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#10 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#11 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#12 /var/www/html/index.php(49): Yee\Yee->execute()
+#13 {main}
+ERROR - 2016-07-25 14:03:47 - exception 'ErrorException' with message 'Undefined variable: error' in /var/www/html/App/Controllers/ajax/AjaxController.php:93
+Stack trace:
+#0 /var/www/html/App/Controllers/ajax/AjaxController.php(93): Yee\Yee::handleErrors(8, 'Undefined varia...', '/var/www/html/A...', 93, Array)
+#1 [internal function]: AjaxController->postUpdateMyAccount()
+#2 /var/www/html/Yee/Managers/Controller/Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postUpdateMy...', Array)
+#4 [internal function]: AjaxController::___postUpdateMyAccount()
+#5 /var/www/html/Yee/Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 /var/www/html/Yee/Yee.php(1333): Yee\Route->dispatch()
+#7 /var/www/html/Yee/Middleware/Flash.php(85): Yee\Yee->call()
+#8 /var/www/html/Yee/Middleware/MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 /var/www/html/Yee/Middleware/PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 /var/www/html/Yee/Yee.php(1278): Yee\Middleware\PrettyExceptions->call()
+#11 /var/www/html/index.php(49): Yee\Yee->execute()
+#12 {main}

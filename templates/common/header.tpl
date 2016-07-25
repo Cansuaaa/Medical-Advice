@@ -18,6 +18,7 @@
         <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="/css/theme-cobalt.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="/css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/css/bootstrap-editable.css" rel="stylesheet">
         <!--[if gte IE 9]>
         	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
 		<![endif]-->

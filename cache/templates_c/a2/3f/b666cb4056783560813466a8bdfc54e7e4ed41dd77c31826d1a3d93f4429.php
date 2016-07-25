@@ -110,12 +110,13 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
         <script src=\"/js/lightbox.min.js\"></script>
         <script src=\"/js/jquery.countdown.min.js\"></script>
         <script src=\"/js/scripts.js\"></script>
+        <script src=\"/js/bootstrap-editable.js\"></script>
         ";
-        // line 95
+        // line 96
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["javascript"]) ? $context["javascript"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["js"]) {
-            // line 96
+            // line 97
             echo "            <script src=\"";
             echo twig_escape_filter($this->env, (isset($context["js"]) ? $context["js"] : null), "html", null, true);
             echo "\"></script>
@@ -124,7 +125,7 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['js'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 98
+        // line 99
         echo "        
     </body>
 </html>";
@@ -142,6 +143,6 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
 
     public function getDebugInfo()
     {
-        return array (  128 => 98,  119 => 96,  115 => 95,  30 => 10,  169 => 145,  100 => 79,  21 => 2,  19 => 1,);
+        return array (  129 => 99,  120 => 97,  116 => 96,  87 => 57,  81 => 54,  74 => 51,  30 => 10,  19 => 1,);
     }
 }

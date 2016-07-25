@@ -30,19 +30,27 @@ class MyAccountModel
         return FALSE;
     }
         
-    public function updateDetails($email, $password, $firstName, $lastName) {
+    public function updateDetails($name, $value) {
+        
         $app = \Yee\Yee::getInstance();
+        $data = [];
         
-        $data = array(
-            "firstName" => $firstName,
-            "lastName" => $lastName
-        );
-                
-        if (strlen($password) > 0) {
-            $data['password'] = $password;
+        
+        
+        if ($name == "firstName") {
+            
+           $data['firstName'] = $value;
+           
+        } else if ($name == "lastName") {
+            
+            $data['lastName'] = $value;
         }
+                
+//        if (strlen($password) > 0) {
+//            $data['password'] = $password;
+//        }
         
-        return $app->db['default']->where("email", $email)->update("users", $data);
+        $app->db['default']->where("email", $_SESSION['username'])->update("users", $data);
     }
     
 }

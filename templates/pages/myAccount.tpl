@@ -18,32 +18,25 @@
 
 
                     <div class="col-sm-12 col-md-3 col-lg-4 text-center">
-                        
-                        
-                       
-                        
-                        
-                        
+                  
                         <div class="alert alert-warning" id="error" style="display: none" role="alert"></div>
                     <div class="photo-form-wrapper text-center">
                         <form id="myAccountForm">   
                             <table class="table">
+                                <td>
                                     <tr>
                                              Email: 
-                                        <input style="background-color:orange" name="email"  type="text" value="{{userDetail.email}}" disabled><br>
+                                       <a href="#" id="email" name="email" data-type="text" data-pk="name" data-url="/ajax/updateMyAccount" data-title="Enter username" style="disabled: true;" >{{userDetail.email}}</a>
                                     </tr>
                                     <tr>
-                                             Password: 
-                                        <input style="background-color:orange" name="password"  type="text" value="*********" disabled><br>
+                                             First Name: 
+                                       <a href="#" id="firstName" name="firstName" data-type="text" data-pk="name" data-url="/ajax/updateMyAccount" data-title="Enter first name">{{userDetail.firstName}}</a>
                                     </tr>
                                     <tr>
-                                            First Name: 
-                                    <input style="background-color:orange" name="firstName"   placeholder="First name" type="text"  value="{{userDetail.firstName}}" disabled>
+                                            Last Name: 
+                                   <a href="#" id="lastName" name="lastName" data-type="text" data-pk="name" data-url="/ajax/updateMyAccount" data-title="Enter last name">{{userDetail.lastName}}</a>
                                     </tr>
-                                    <tr>
-                                            Last Name:
-                                             <input style="background-color:orange" name="lastName"    placeholder="Last name" type="text" value="{{userDetail.lastName}}" disabled>
-                                    </tr> 
+                                 </td> 
                             </table>
                                    
                                         <a href="/editMyAccount">

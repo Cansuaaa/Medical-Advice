@@ -56,27 +56,39 @@ class AjaxController extends Controller
         
         $email = $_SESSION['username'];
         
-        $password = $app->request()->post('password');
-        $confirmPassword = $app->request()->post('rePassword');
-        $firstName = $app->request()->post('firstName');
-        $lastName = $app->request()->post('lastName');
+//        $password = $app->request()->post('password');
+//        $confirmPassword = $app->request()->post('rePassword');
+//        
+        $name = $app->request()->post('name');
+        $value = $app->request()->post('value');
+        
+        if($value == "")
+        {
+            $error = "Complete the field!";
+        }
         
         $model = new MyAccountModel();
         
-        if (strlen($password) > 0) {
-            if (!$model->validatePassword($password, $confirmPassword)) {
-                $error = "Passwords do not match!";
-            }
+        if (isset($error) == false ) {
+            $model->updateDetails($name,$value);
         }
         
-        if (!isset($error) && !$model->updateDetails($email, $password, $firstName, $lastName)) {
-            $error = "Couldn't save the new details! Please check the data and try again!";
-        }
+        
+        
+//        if (strlen($password) > 0) {
+//            if (!$model->validatePassword($password, $confirmPassword)) {
+//                $error = "Passwords do not match!";
+//            }
+//        }
+        
+//        if (!isset($error) && !$model->updateDetails($email, $password, $firstName, $lastName)) {
+//            $error = "Couldn't save the new details! Please check the data and try again!";
+//        }
         
         if (isset($error)) {
             $data = array(
                 "success" => FALSE,
-                "error" => TRUE,
+                "error" => FALSE,
                 "message" => $error
             );
         } else {

@@ -1,3 +1,4 @@
+$.fn.editable.defaults.mode = 'inline';
 $('#myAccountForm').submit(function(e){
     var url = "/ajax/updateMyAccount";
     
@@ -15,5 +16,14 @@ $('#myAccountForm').submit(function(e){
 });
 
 
-
- 
+    $(document).ready(function() {
+        $('#email').editable();
+    });
+    
+     $(document).ready(function() {
+        $('#firstName').editable();
+    });
+    
+    $(document).ready(function() {
+        $('#lastName').editable();
+    });

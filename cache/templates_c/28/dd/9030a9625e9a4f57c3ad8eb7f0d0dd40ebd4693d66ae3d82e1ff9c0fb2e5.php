@@ -39,6 +39,7 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
         <link href=\"/css/bootstrap.min.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
         <link href=\"/css/theme-cobalt.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
         <link href=\"/css/custom.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\"/>
+        <link href=\"/css/bootstrap-editable.css\" rel=\"stylesheet\">
         <!--[if gte IE 9]>
         \t<link rel=\"stylesheet\" type=\"text/css\" href=\"css/ie9.css\" />
 \t\t<![endif]-->
@@ -69,20 +70,20 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 \t\t\t\t\t\t\t<ul class=\"menu\">
 \t\t\t\t\t\t\t\t<li><a href=\"/\">Home</a></li>
                                                                 ";
-        // line 50
+        // line 51
         if (($this->getAttribute((isset($context["session"]) ? $context["session"] : null), "islogged") == false)) {
             echo " 
 \t\t\t\t\t\t\t\t<li><a href=\"/login\">Login</a></li>
                                                                 <li><a href=\"/signup\">Sign Up</a></li>
                                                                  ";
         } else {
-            // line 53
+            // line 54
             echo " 
                                                                 <li><a href=\"/logout\">Logout</a></li>
                                                                 <li><a href=\"/myAccount\">My account</a></li>
                                                                  ";
         }
-        // line 56
+        // line 57
         echo " 
                                                                 <!--START OF DROPDOWN LINKS
 \t\t\t\t\t\t\t\t<li class=\"has-dropdown\"><a href=\"#\">Dropdown</a>
@@ -207,6 +208,6 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
     public function getDebugInfo()
     {
-        return array (  86 => 56,  80 => 53,  73 => 50,  30 => 10,  19 => 1,);
+        return array (  87 => 57,  81 => 54,  74 => 51,  30 => 10,  19 => 1,);
     }
 }

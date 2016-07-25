@@ -18,8 +18,6 @@ class AjaxModel
         $this->password = $password;
     }
     
-   
-        
     
    public function validate()
    {

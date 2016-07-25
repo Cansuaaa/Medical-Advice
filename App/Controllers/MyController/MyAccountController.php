@@ -16,15 +16,28 @@ class MyAccountController extends Controller
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
         
-       
+        $javascript = array(
+            '/js/myAccount.js'
+        );
+        
+        $jsEditable = array(
+            '/js/bootstrap-editable.js'
+        );
+        
+        $cssEditable = array(
+            '/css/bootstrap-editable.css'
+        );
+        
         $myAccount = new MyAccountModel();
         $accDetail = $myAccount->getAccountDetails();
         
-//        var_dump($accDetail);
-//        die();
+
         $data = array(
             "title" => "MyAccount",
             'userDetail' => $accDetail,
+            'javascript' => $javascript,
+            'jsEditable' => $jsEditable,
+            'cssEditable' => $cssEditable,
         );
         
         $app->render('pages/myAccount.tpl', $data);
@@ -47,10 +60,9 @@ class MyAccountController extends Controller
         $myAccount = new MyAccountModel();
         $accDetail = $myAccount->getAccountDetails();
         
-//        var_dump($accDetail);
-//        die();
+
         $data = array(
-            "title" => "EditAccount",
+            "title" => "Edit Account",
             'userDetail' => $accDetail,
             'javascript' => $javascript,
         );
