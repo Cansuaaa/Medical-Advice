@@ -53,4 +53,13 @@ class MyAccountModel
         $app->db['default']->where("email", $_SESSION['username'])->update("users", $data);
     }
     
+    public function updatePass($newPassword) {
+        
+        $app = \Yee\Yee::getInstance();
+        $data = array(
+          'password' => $newPassword,
+        );
+        
+        $app->db['default']->where("email", $_SESSION['username'])->update("users", $data);
+    }
 }

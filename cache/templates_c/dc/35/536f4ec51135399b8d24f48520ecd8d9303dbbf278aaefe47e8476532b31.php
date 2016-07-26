@@ -68,7 +68,7 @@ class __TwigTemplate_dc35536f4ec51135399b8d24f48520ecd8d9303dbbf278aaefe47e84765
                             </table>
                                    
                                         <a href=\"/editMyAccount\">
-                                            <div class=\"btn\" style=\"background-color: rgb(189, 21, 21);\"> Edit </div>
+                                            <div class=\"btn\" style=\"background-color: rgb(189, 21, 21);\"> Change your password! </div>
                                         </a>
                                     
                         </form>

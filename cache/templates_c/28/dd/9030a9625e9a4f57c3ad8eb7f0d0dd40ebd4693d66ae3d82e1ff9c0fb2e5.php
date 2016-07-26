@@ -81,9 +81,10 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
             echo " 
                                                                 <li><a href=\"/logout\">Logout</a></li>
                                                                 <li><a href=\"/myAccount\">My account</a></li>
+                                                                <li><a href=\"/questionForm\">Questions</a></li>
                                                                  ";
         }
-        // line 57
+        // line 58
         echo " 
                                                                 <!--START OF DROPDOWN LINKS
 \t\t\t\t\t\t\t\t<li class=\"has-dropdown\"><a href=\"#\">Dropdown</a>
@@ -208,6 +209,6 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
     public function getDebugInfo()
     {
-        return array (  87 => 57,  81 => 54,  74 => 51,  30 => 10,  19 => 1,);
+        return array (  88 => 58,  81 => 54,  74 => 51,  30 => 10,  19 => 1,);
     }
 }

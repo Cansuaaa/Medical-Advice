@@ -1,6 +1,5 @@
-$.fn.editable.defaults.mode = 'inline';
 $('#myAccountForm').submit(function(e){
-    var url = "/ajax/updateMyAccount";
+    var url = "/ajax/editPassword";
     
     $.ajax({
         type: "POST",
@@ -16,7 +15,3 @@ $('#myAccountForm').submit(function(e){
 });
 
 
-        $('#firstName').editable();
-   
-        $('#lastName').editable();
-    

@@ -40,7 +40,7 @@
                             </table>
                                    
                                         <a href="/editMyAccount">
-                                            <div class="btn" style="background-color: rgb(189, 21, 21);"> Edit </div>
+                                            <div class="btn" style="background-color: rgb(189, 21, 21);"> Change your password! </div>
                                         </a>
                                     
                         </form>

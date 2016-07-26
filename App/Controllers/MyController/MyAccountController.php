@@ -54,7 +54,7 @@ class MyAccountController extends Controller
         $app = $this->getYee();
         
         $javascript = array(
-            '/js/myAccount.js'
+            '/js/editPassword.js'
         );
         
         $myAccount = new MyAccountModel();

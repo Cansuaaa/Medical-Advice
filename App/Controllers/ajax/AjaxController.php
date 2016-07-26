@@ -101,4 +101,67 @@ class AjaxController extends Controller
         $app->response()->headers()->set('Content-Type', 'application/json');
         echo json_encode($data); 
     }
+    
+    
+    
+     
+    /**
+     * @Route('/ajax/editPassword')
+     * @Name('ajax.editPassword')
+     * @Method('post')
+     */
+    public function editPassword() {
+        $app = $this->getYee();
+        
+        $email = $_SESSION['username'];
+        
+        $password = $app->request()->post('password');
+        $newPassword = $app->request()->post('newPassword');
+        $confirmPassword = $app->request()->post('rePassword');
+        
+//        var_dump($_POST);
+//        die();
+        
+        
+        $model = new MyAccountModel();
+        $userData = $model->getAccountDetails();
+        
+        if(strlen($password) > 0 && strlen($newPassword) > 0 && strlen($confirmPassword) > 0 )
+        {
+            
+            if($userData['password'] != $password){
+                $error = "Your password is not correct!";
+            }
+            if (!$model->validatePassword($newPassword, $confirmPassword)) {
+                $error = "Passwords do not match!";
+            }
+            
+        } else {
+            $error = "Complete the fields!";
+        }
+        
+        
+        if (isset($error) == false) {
+            $model->updatePass($newPassword);
+        }
+        
+        if (isset($error)) {
+            $data = array(
+                "success" => FALSE,
+                "error" => FALSE,
+                "message" => $error
+            );
+        } else {
+            $data = array(
+                "success" => TRUE,
+                "message" => "Successfully updated!"
+            );
+        }
+        
+        $app->response()->headers()->set('Content-Type', 'application/json');
+        echo json_encode($data); 
+    }
+    
+    
+   
 }

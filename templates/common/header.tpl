@@ -54,6 +54,7 @@
                                                                  {% else %} 
                                                                 <li><a href="/logout">Logout</a></li>
                                                                 <li><a href="/myAccount">My account</a></li>
+                                                                <li><a href="/questionForm">Questions</a></li>
                                                                  {% endif %} 
                                                                 <!--START OF DROPDOWN LINKS
 								<li class="has-dropdown"><a href="#">Dropdown</a>
