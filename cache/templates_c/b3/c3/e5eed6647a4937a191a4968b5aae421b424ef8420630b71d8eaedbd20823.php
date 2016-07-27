@@ -18,7 +18,12 @@ class __TwigTemplate_b3c3e5eed6647a4937a191a4968b5aae421b424ef8420630b71d8eaedbd
         // line 1
         $this->env->loadTemplate("./common/header.tpl")->display($context);
         // line 2
-        echo "
+        echo "<style>
+    .ccolor {
+    color:#8A2BE2;
+    }
+</style>
+
 <section>
     <div class=\"main-container\" style=\"background-color: #c0a16b\">
         <div class=\"row\">
@@ -43,19 +48,19 @@ class __TwigTemplate_b3c3e5eed6647a4937a191a4968b5aae421b424ef8420630b71d8eaedbd
                     <div class=\"photo-form-wrapper text-center\">
                                 <h1 class=\"text-white\">Add a question now!</h1>
                        
-                            <form method=\"post\" action=\"/addQuestion\">
-                                <div style=\"color:#8A2BE2\"> Author: </div>
-                                 <input style=\"color:#8A2BE2 \" name=\"author\"   placeholder=\"Author\" type=\"text\"  value=\"";
-        // line 29
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["userDetail"]) ? $context["userDetail"] : null), "email"), "html", null, true);
+                            <form method=\"post\" id=\"addQuestionForm\"> 
+                                <div class=\"ccolor\"> Author: </div>
+                                <input disabled class=\"ccolor\" name=\"author\"   placeholder=\"Author\" type=\"text\"  value=\"";
+        // line 34
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["userDetails"]) ? $context["userDetails"] : null), "email"), "html", null, true);
         echo "\">
-                                  <div style=\"color:#8A2BE2\"> Title: </div>
-                                <input style=\"color:#8A2BE2 \" name=\"title\"     placeholder=\"Title\" type=\"text\" value=\"\"type=\"text\" >
-                                 <div style=\"color:#8A2BE2\"> Content: </div>
-                                 <textarea  class=\"form-control\" id=\"content\" name=\"content\" placeholder=\"Add your question\" 
-                                           style=\"color:#8A2BE2; width:463px; height:150px; resize:none;\"></textarea><br>
+                                  <div class=\"ccolor\"> Title: </div>
+                                <input class=\"ccolor\" name=\"title\"     placeholder=\"Title\" type=\"text\" value=\"\"type=\"text\" >
+                                 <div class=\"ccolor\"> Content: </div>
+                                 <textarea  class=\"form-control ccolor\" id=\"content\" name=\"content\" placeholder=\"Add your question ...\" 
+                                           style=\"width:574px; height:200px; resize:none;\"></textarea><br>
 
-                            </form>
+                            
                                  
                                     <select style=\"color:#8A2BE2\">
                                         <option style=\"color:#8A2BE2\" value=\"1\">
@@ -68,7 +73,8 @@ class __TwigTemplate_b3c3e5eed6647a4937a191a4968b5aae421b424ef8420630b71d8eaedbd
                                             Category 3
                                         </option>
                                     </select>
-                                  <input id=\"Edit\"  class=\"btn-filled\" text=\"centered\" style=\"background-color: #8A2BE2;\"  value=\"Save Changes\" type=\"submit\">
+                                  <input id=\"submit\"  class=\"btn-filled\" text=\"centered\" style=\"background-color:#8A2BE2 ;\"  value=\"Add\" type=\"submit\">
+                            </form>
                         </div>
                              
                      
@@ -83,7 +89,7 @@ class __TwigTemplate_b3c3e5eed6647a4937a191a4968b5aae421b424ef8420630b71d8eaedbd
 </section>
                                    
 ";
-        // line 63
+        // line 69
         $this->env->loadTemplate("./common/footer.tpl")->display($context);
     }
 
@@ -99,6 +105,6 @@ class __TwigTemplate_b3c3e5eed6647a4937a191a4968b5aae421b424ef8420630b71d8eaedbd
 
     public function getDebugInfo()
     {
-        return array (  87 => 63,  50 => 29,  21 => 2,  19 => 1,);
+        return array (  93 => 69,  55 => 34,  21 => 2,  19 => 1,);
     }
 }

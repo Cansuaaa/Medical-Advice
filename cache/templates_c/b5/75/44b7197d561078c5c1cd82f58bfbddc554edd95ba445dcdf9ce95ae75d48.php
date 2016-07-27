@@ -1,7 +1,7 @@
 <?php
 
-/* pages/questionForm.tpl */
-class __TwigTemplate_8fc33677d6e3b598f7c6e8cc72956c29784782e8721b0a3aa1877740af0251ec extends Twig_Template
+/* pages/questionList.tpl */
+class __TwigTemplate_b57544b7197d561078c5c1cd82f58bfbddc554edd95ba445dcdf9ce95ae75d48 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -146,7 +146,7 @@ class __TwigTemplate_8fc33677d6e3b598f7c6e8cc72956c29784782e8721b0a3aa1877740af0
 
     public function getTemplateName()
     {
-        return "pages/questionForm.tpl";
+        return "pages/questionList.tpl";
     }
 
     public function isTraitable()

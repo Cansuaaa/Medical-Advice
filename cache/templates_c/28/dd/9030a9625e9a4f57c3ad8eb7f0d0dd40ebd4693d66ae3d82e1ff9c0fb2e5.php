@@ -25,10 +25,7 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 <html class=\"no-js\"> <!--<![endif]-->
     <head>
         <meta charset=\"utf-8\">
-        <title>";
-        // line 10
-        echo twig_escape_filter($this->env, (isset($context["title"]) ? $context["title"] : null), "html", null, true);
-        echo "</title>
+        <title> Medical Advice</title>
         <meta name=\"description\" content=\"\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
         <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
@@ -81,10 +78,18 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
             echo " 
                                                                 <li><a href=\"/logout\">Logout</a></li>
                                                                 <li><a href=\"/myAccount\">My account</a></li>
-                                                                <li><a href=\"/questionForm\">Questions</a></li>
+
+                                                            <button class=\"btn-link btn-default dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\">Questions
+                                                            <span class=\"caret\"></span></button>
+                                                            <ul class=\"dropdown-menu\">
+                                                                <li><a href=\"/questionList\">QuestionList</a></li>
+                                                                <li><a href=\"/addQuestion\">Add Question</a></li>
+                                                            </ul>
+
+                                                                
                                                                  ";
         }
-        // line 58
+        // line 66
         echo " 
                                                                 <!--START OF DROPDOWN LINKS
 \t\t\t\t\t\t\t\t<li class=\"has-dropdown\"><a href=\"#\">Dropdown</a>
@@ -209,6 +214,6 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
     public function getDebugInfo()
     {
-        return array (  88 => 58,  81 => 54,  74 => 51,  30 => 10,  19 => 1,);
+        return array (  93 => 66,  78 => 54,  71 => 51,  19 => 1,);
     }
 }

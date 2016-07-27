@@ -7,7 +7,7 @@
 <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>{{title}}</title>
+        <title> Medical Advice</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +54,15 @@
                                                                  {% else %} 
                                                                 <li><a href="/logout">Logout</a></li>
                                                                 <li><a href="/myAccount">My account</a></li>
-                                                                <li><a href="/questionForm">Questions</a></li>
+
+                                                            <button class="btn-link btn-default dropdown-toggle" type="button" data-toggle="dropdown">Questions
+                                                            <span class="caret"></span></button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="/questionList">QuestionList</a></li>
+                                                                <li><a href="/addQuestion">Add Question</a></li>
+                                                            </ul>
+
+                                                                
                                                                  {% endif %} 
                                                                 <!--START OF DROPDOWN LINKS
 								<li class="has-dropdown"><a href="#">Dropdown</a>

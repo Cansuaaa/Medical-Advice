@@ -1,4 +1,9 @@
 {% include "./common/header.tpl" %}
+<style>
+    .ccolor {
+    color:#8A2BE2;
+    }
+</style>
 
 <section>
     <div class="main-container" style="background-color: #c0a16b">
@@ -24,16 +29,16 @@
                     <div class="photo-form-wrapper text-center">
                                 <h1 class="text-white">Add a question now!</h1>
                        
-                            <form method="post" action="/addQuestion">
-                                <div style="color:#8A2BE2"> Author: </div>
-                                 <input style="color:#8A2BE2 " name="author"   placeholder="Author" type="text"  value="{{userDetail.email}}">
-                                  <div style="color:#8A2BE2"> Title: </div>
-                                <input style="color:#8A2BE2 " name="title"     placeholder="Title" type="text" value=""type="text" >
-                                 <div style="color:#8A2BE2"> Content: </div>
-                                 <textarea  class="form-control" id="content" name="content" placeholder="Add your question" 
-                                           style="color:#8A2BE2; width:463px; height:150px; resize:none;"></textarea><br>
+                            <form method="post" id="addQuestionForm"> 
+                                <div class="ccolor"> Author: </div>
+                                <input disabled class="ccolor" name="author"   placeholder="Author" type="text"  value="{{userDetails.email}}">
+                                  <div class="ccolor"> Title: </div>
+                                <input class="ccolor" name="title"     placeholder="Title" type="text" value=""type="text" >
+                                 <div class="ccolor"> Content: </div>
+                                 <textarea  class="form-control ccolor" id="content" name="content" placeholder="Add your question ..." 
+                                           style="width:574px; height:200px; resize:none;"></textarea><br>
 
-                            </form>
+                            
                                  
                                     <select style="color:#8A2BE2">
                                         <option style="color:#8A2BE2" value="1">
@@ -46,7 +51,8 @@
                                             Category 3
                                         </option>
                                     </select>
-                                  <input id="Edit"  class="btn-filled" text="centered" style="background-color: #8A2BE2;"  value="Save Changes" type="submit">
+                                  <input id="submit"  class="btn-filled" text="centered" style="background-color:#8A2BE2 ;"  value="Add" type="submit">
+                            </form>
                         </div>
                              
                      
