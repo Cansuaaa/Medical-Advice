@@ -26,22 +26,11 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
 \t\t\t\t<div class=\"container\">
 \t\t\t\t\t<div class=\"row\">
 \t\t\t\t\t\t<div class=\"col-sm-4\">
-\t\t\t\t\t\t\t<img alt=\"logo\" class=\"logo\" src=\"/img/logo-dark.png\">
-\t\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t\tSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"col-sm-4\">
-\t\t\t\t\t\t\t<h1>Contact</h1>
-\t\t\t\t\t\t\t<p>
-\t\t\t\t\t\t\t\thello@pivot.net<br>
-\t\t\t\t\t\t\t\t+61 3827 9284<br>
-\t\t\t\t\t\t\t\t<br>
-\t\t\t\t\t\t\t\tSuite 2A Humbolt Plaza<br>
-\t\t\t\t\t\t\t\t300 Collins St<br>
-\t\t\t\t\t\t\t\tMelbourne 3000
-\t\t\t\t\t\t\t</p>
+\t\t\t\t\t\t\t
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t
 \t\t\t\t\t\t<div class=\"col-sm-4\">
@@ -86,18 +75,12 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t\t
-\t\t\t\t\t<div class=\"row\">
-\t\t\t\t\t\t<div class=\"col-sm-12\">
-\t\t\t\t\t\t\t<span class=\"sub\">© Copright 2014 <a href=\"#\">Medium Rare</a> - All Rights Reserved</span>
-\t\t\t\t\t\t</div>
-\t\t\t\t\t</div>
 \t\t\t\t\t
 \t\t\t\t</div>
 \t\t\t</footer>
 \t\t</div>
 \t\t\t\t
-\t\t<script src=\"https://www.youtube.com/iframe_api\"></script>
-\t\t<script src=\"/js/jquery.min.js\"></script>
+        <script src=\"/js/jquery.min.js\"></script>
         <script src=\"/js/jquery.plugin.min.js\"></script>
         <script src=\"/js/bootstrap.min.js\"></script>
         <script src=\"/js/jquery.flexslider-min.js\"></script>
@@ -112,11 +95,11 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
         <script src=\"/js/scripts.js\"></script>
         <script src=\"/js/bootstrap-editable.js\"></script>
         ";
-        // line 96
+        // line 79
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["javascript"]) ? $context["javascript"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["js"]) {
-            // line 97
+            // line 80
             echo "            <script src=\"";
             echo twig_escape_filter($this->env, (isset($context["js"]) ? $context["js"] : null), "html", null, true);
             echo "\"></script>
@@ -125,7 +108,7 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['js'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 99
+        // line 82
         echo "        
     </body>
 </html>";
@@ -143,6 +126,6 @@ class __TwigTemplate_a23fb666cb4056783560813466a8bdfc54e7e4ed41dd77c31826d1a3d93
 
     public function getDebugInfo()
     {
-        return array (  129 => 99,  120 => 97,  116 => 96,  87 => 57,  81 => 54,  74 => 51,  30 => 10,  19 => 1,);
+        return array (  112 => 82,  103 => 80,  99 => 79,  19 => 1,);
     }
 }

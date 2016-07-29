@@ -7,11 +7,13 @@ class QuestionModel
 {
     private $title;
     private $content;
+    private $category;
    
-    public function __construct($title, $content)
+    public function __construct($title, $content, $category)
     {  
         $this->title = $title;
         $this->content = $content;
+        $this->category = $category;
     }
     
     /**
@@ -28,7 +30,7 @@ class QuestionModel
             'author_id'=> $email,
             'content' => $this->content,
             'date' => date("Y-m-d H:i:s"),
-            'category_id' => 0,
+            'category_id' => $this->category,
             'main_picture' => 1,
         ));
     }

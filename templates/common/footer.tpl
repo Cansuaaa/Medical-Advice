@@ -8,22 +8,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-4">
-							<img alt="logo" class="logo" src="/img/logo-dark.png">
-							<p>
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-							</p>
+							
 						</div>
 						
 						<div class="col-sm-4">
-							<h1>Contact</h1>
-							<p>
-								hello@pivot.net<br>
-								+61 3827 9284<br>
-								<br>
-								Suite 2A Humbolt Plaza<br>
-								300 Collins St<br>
-								Melbourne 3000
-							</p>
+							
 						</div>
 						
 						<div class="col-sm-4">
@@ -68,18 +57,12 @@
 						</div>
 					</div>
 					
-					<div class="row">
-						<div class="col-sm-12">
-							<span class="sub">© Copright 2014 <a href="#">Medium Rare</a> - All Rights Reserved</span>
-						</div>
-					</div>
 					
 				</div>
 			</footer>
 		</div>
 				
-		<script src="https://www.youtube.com/iframe_api"></script>
-		<script src="/js/jquery.min.js"></script>
+        <script src="/js/jquery.min.js"></script>
         <script src="/js/jquery.plugin.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/jquery.flexslider-min.js"></script>

@@ -43,8 +43,15 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
         <script src=\"/js/modernizr-2.6.2-respond-1.1.0.min.js\"></script>
         <script src=\"https://code.jquery.com/jquery-3.0.0.min.js\"></script>
+        <script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
+         <script>
+  tinymce.init({
+    selector: '#content'
+  });
+  </script>
+
     </head>
-    <body>
+    <body id=\"bd\">
     \t<div class=\"loader\" >
     \t\t<div class=\"spinner\">
 \t\t\t  <div class=\"double-bounce1\"></div>
@@ -67,30 +74,61 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 \t\t\t\t\t\t\t<ul class=\"menu\">
 \t\t\t\t\t\t\t\t<li><a href=\"/\">Home</a></li>
                                                                 ";
-        // line 51
+        // line 58
         if (($this->getAttribute((isset($context["session"]) ? $context["session"] : null), "islogged") == false)) {
             echo " 
 \t\t\t\t\t\t\t\t<li><a href=\"/login\">Login</a></li>
                                                                 <li><a href=\"/signup\">Sign Up</a></li>
                                                                  ";
         } else {
-            // line 54
+            // line 61
             echo " 
                                                                 <li><a href=\"/logout\">Logout</a></li>
                                                                 <li><a href=\"/myAccount\">My account</a></li>
-
-                                                            <button class=\"btn-link btn-default dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\">Questions
-                                                            <span class=\"caret\"></span></button>
-                                                            <ul class=\"dropdown-menu\">
-                                                                <li><a href=\"/questionList\">QuestionList</a></li>
+                                                                <li><a href=\"/categoryList\">Categories' list</a></li>
+                                                                <li><a href=\"/addCategory\">Add Category</a></li>
+                                                                <li><a href=\"/questionList\">Questions' list</a></li>
                                                                 <li><a href=\"/addQuestion\">Add Question</a></li>
-                                                            </ul>
-
-                                                                
-                                                                 ";
+                                                                    ";
         }
-        // line 66
+        // line 68
         echo " 
+                                                                
+                                                           <!-- <button class=\"btn-link btn-link dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\">Categories
+                                                                <span class=\"caret\"></span></button>
+                                                                <ul class=\"dropdown-menu\">
+                                                                    <table>
+                                                                        <tr>
+                                                                            <li>
+                                                                                <a href=\"/categoryList\">Categories' list</a>
+                                                                            </li>
+                                                                        </tr>
+                                                                            <
+                                                                        <tr>
+                                                                        </tr>
+                                                                    </table>
+                                                                </ul>
+
+                                                              <button class=\"btn-link btn-link dropdown-toggle\" type=\"button\" data-toggle=\"dropdown\">Questions
+                                                                <span class=\"caret2\"></span></button>
+                                                                <ul class=\"dropdown-menu\">
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <li><a href=\"/addQuestion\">Add Question</a></li>
+                                                                            </td>
+                                                                        </tr>
+                                                                    
+                                                                        <tr>
+                                                                            <td>
+                                                                                <li><a href=\"/questionList\">Questions' list</a></li>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </ul> -->
+                                                               
+
+                                                                 
                                                                 <!--START OF DROPDOWN LINKS
 \t\t\t\t\t\t\t\t<li class=\"has-dropdown\"><a href=\"#\">Dropdown</a>
 \t\t\t\t\t\t\t\t\t<ul class=\"subnav\">
@@ -167,8 +205,7 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t</li>
                                                                 END OF DROPDOWN LINKS--> 
-\t\t\t\t\t\t\t\t
-\t\t\t\t\t\t\t</ul>
+                                                        </ul>
 \t\t
 \t\t\t\t\t\t\t<ul class=\"social-icons text-right\">
 \t\t\t\t\t\t\t\t<li>
@@ -214,6 +251,6 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
     public function getDebugInfo()
     {
-        return array (  93 => 66,  78 => 54,  71 => 51,  19 => 1,);
+        return array (  95 => 68,  85 => 61,  78 => 58,  19 => 1,);
     }
 }

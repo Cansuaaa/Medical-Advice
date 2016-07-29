@@ -43,7 +43,7 @@ class __TwigTemplate_daab2c219ccb01862b4bb5c69606d04210e9011c9b11e85db46a2b0101a
                         <form id=\"myAccountForm\">   
                             Password: 
                                 <input style=\"background-color:orange\" name=\"password\"   placeholder=\"Password\" type=\"password\" value=\"\">
-                                 New password: 
+                            New password: 
                                 <input style=\"background-color:orange\" name=\"newPassword\"   placeholder=\"New password\" type=\"password\" value=\"\">
                             Confirm Password: 
                                 <input style=\"background-color:orange\" name=\"rePassword\" placeholder=\"Confirm your password\" type=\"password\" value=\"\">

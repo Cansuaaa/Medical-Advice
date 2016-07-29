@@ -5,6 +5,7 @@ use Yee\Managers\CacheManager;
 use App\Models\MyAccount\MyAccountModel;
 use App\Models\Ajax\AjaxModel;
 use App\Models\Question\QuestionModel;
+use App\Models\Category\CategoryModel;
 
 class AjaxController extends Controller {
 
@@ -164,11 +165,13 @@ class AjaxController extends Controller {
         // $author = $app->request()->post('author');
         $title = $app->request()->post('title');
         $content = $app->request()->post('content');
+        $category = $app->request()->post('category');
+        
         $email = $_SESSION['username'];
 //        var_dump($_POST);
 //        die();
 
-        $questionModel = new QuestionModel($title, $content);
+        $questionModel = new QuestionModel($title, $content, $category);
 
         if (strlen($title) > 0 && strlen($content) > 0) {
             $questionModel->addQuestionDB($email);
@@ -194,4 +197,46 @@ class AjaxController extends Controller {
         echo json_encode($data);
     }
 
+    
+    /**
+     * @Route('/ajax/addCategory')
+     * @Name('ajax/addCategory')
+     * @Method('POST')
+     */
+    public function addCategory() {
+        /** @var Yee\Yee $yee */
+        $app = $this->getYee();
+        
+        $category = $app->request()->post('category');
+        $email = $_SESSION['username'];
+//        var_dump($_POST);
+//        die();
+   
+        $categoryModel = new CategoryModel();
+
+        if (strlen($category) > 0) {
+            $categoryModel->addCategoryDB($email, $category);
+        } else {
+            $error = "Complete the fields!";
+        }
+
+
+        if (isset($error)) {
+            $data = array(
+                "success" => FALSE,
+                "error" => FALSE,
+                "message" => $error,
+            );
+        } else {
+            $data = array(
+                "success" => TRUE,
+                "message" => "Successfully added!",
+            );
+        }
+
+        $app->response()->headers()->set('Content-Type', 'application/json');
+        echo json_encode($data);
+    }
+
+    
 }

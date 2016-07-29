@@ -1,9 +1,9 @@
 <?php
 use Yee\Managers\Controller\Controller;
 use Yee\Managers\CacheManager;
-use App\Models\MyAccount\MyAccountModel;
 use App\Models\Question\QuestionModel;
 use App\Models\Question\QuestionListModel;
+use App\Models\Category\CategorySelectModel;
 
 class QuestionController extends Controller
 {
@@ -32,8 +32,6 @@ class QuestionController extends Controller
                 $app->redirect('/');
             }
         
-        
-        
     }
     
      /**
@@ -44,20 +42,30 @@ class QuestionController extends Controller
     {
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
-       
-        $userDetail = new MyAccountModel();
-        $userArray = $userDetail->getAccountDetails();
+        
+        
+        $selectCategoryModel = new CategorySelectModel();
+        $categoryArray = $selectCategoryModel->categorySelect();
+      
         
         $javascript = array(
         
             '/js/question.js',
         );
+        
+        $jquerytinymce = array(
+        
+            '/js/question.js',
+        );
+        
+        
          if(isset($_SESSION["islogged"]) == true)
          {
               $data = array(
             "title" => "Add question",
             "javascript" => $javascript,
-            'userDetails' => $userArray,
+            'userEmail' => $_SESSION['username'],
+            'content' => $categoryArray,
         );
         
         $app->render('pages/addQuestion.tpl', $data );

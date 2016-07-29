@@ -1,11 +1,11 @@
- $('#addQuestionForm').submit(function(e){
-     tinyMCE.triggerSave();
-    var url = "/ajax/addQuestion";
+ $('#addCategoryForm').submit(function(e){
+     //tinyMCE.triggerSave();
+    var url = "/ajax/addCategory";
     
     $.ajax({
         type: "POST",
         url: url,
-        data: $('#addQuestionForm').serialize(),
+        data: $('#addCategoryForm').serialize(),
         dataType: "json",
         success: function(data){
             
@@ -14,4 +14,3 @@
     });
     e.preventDefault();
 });
-

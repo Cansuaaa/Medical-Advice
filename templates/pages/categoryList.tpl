@@ -32,46 +32,24 @@
                                         <a class="ccolor">ID</a>
                                     </td>
                                     <td>
-                                        <a class="ccolor">Title</a>
-                                    </td>
-                                    <td>
-                                        <a class="ccolor">Author</a>
-                                    </td>
-                                    <td>
-                                        <a class="ccolor">Date</a>
-                                    </td>
-                                    <td>
-                                        <a class="ccolor">Content</a>
-                                    </td>
-                                    <td>
                                         <a class="ccolor">Category</a>
                                     </td>
                                     <td>
-                                        <a class="ccolor">Main picture</a>
+                                        <a class="ccolor">Actions</a>
                                     </td>
+                                  
                                 </tr>   
                                 {% for row in content %}
                                 <tr>    
                                     <td>
                                            {{row.id}} 
-                                     </td>      
-                                     <td>
-                                           {{row.title}}
+                                     </td>
+                                     <td>    
+                                           {{row.category}}
                                     </td>
                                      <td>
-                                           {{row.author_id}}
-                                    </td>
-                                     <td>
-                                           {{row.date}} 
-                                    </td>
-                                     <td>
-                                           {{row.content | raw}} 
-                                    </td>
-                                     <td>
-                                           {{row.category_id}} 
-                                    </td>
-                                     <td>
-                                           {{row.main_picture}} 
+                                         <a href="#">Update</a>
+                                         <a href="#">Delete</a>
                                     </td>
                                 </tr>
                                 {% endfor %}
@@ -91,3 +69,4 @@
 </section>
                                     
 {% include "./common/footer.tpl" %}
+

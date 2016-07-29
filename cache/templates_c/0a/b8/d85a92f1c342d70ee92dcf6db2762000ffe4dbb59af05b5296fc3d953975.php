@@ -1,7 +1,7 @@
 <?php
 
-/* pages/questionList.tpl */
-class __TwigTemplate_b57544b7197d561078c5c1cd82f58bfbddc554edd95ba445dcdf9ce95ae75d48 extends Twig_Template
+/* pages/categoryList.tpl */
+class __TwigTemplate_0ab8d85a92f1c342d70ee92dcf6db2762000ffe4dbb59af05b5296fc3d953975 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -51,72 +51,35 @@ class __TwigTemplate_b57544b7197d561078c5c1cd82f58bfbddc554edd95ba445dcdf9ce95ae
                                         <a class=\"ccolor\">ID</a>
                                     </td>
                                     <td>
-                                        <a class=\"ccolor\">Title</a>
-                                    </td>
-                                    <td>
-                                        <a class=\"ccolor\">Author</a>
-                                    </td>
-                                    <td>
-                                        <a class=\"ccolor\">Date</a>
-                                    </td>
-                                    <td>
-                                        <a class=\"ccolor\">Content</a>
-                                    </td>
-                                    <td>
                                         <a class=\"ccolor\">Category</a>
                                     </td>
                                     <td>
-                                        <a class=\"ccolor\">Main picture</a>
+                                        <a class=\"ccolor\">Actions</a>
                                     </td>
+                                  
                                 </tr>   
                                 ";
-        // line 53
+        // line 42
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["content"]) ? $context["content"] : null));
         foreach ($context['_seq'] as $context["_key"] => $context["row"]) {
-            // line 54
+            // line 43
             echo "                                <tr>    
                                     <td>
                                            ";
-            // line 56
+            // line 45
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["row"]) ? $context["row"] : null), "id"), "html", null, true);
             echo " 
-                                     </td>      
-                                     <td>
+                                     </td>
+                                     <td>    
                                            ";
-            // line 59
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["row"]) ? $context["row"] : null), "title"), "html", null, true);
+            // line 48
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["row"]) ? $context["row"] : null), "category"), "html", null, true);
             echo "
                                     </td>
                                      <td>
-                                           ";
-            // line 62
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["row"]) ? $context["row"] : null), "author_id"), "html", null, true);
-            echo "
-                                    </td>
-                                     <td>
-                                           ";
-            // line 65
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["row"]) ? $context["row"] : null), "date"), "html", null, true);
-            echo " 
-                                    </td>
-                                     <td>
-                                           ";
-            // line 68
-            echo $this->getAttribute((isset($context["row"]) ? $context["row"] : null), "content");
-            echo " 
-                                    </td>
-                                     <td>
-                                           ";
-            // line 71
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["row"]) ? $context["row"] : null), "category_id"), "html", null, true);
-            echo " 
-                                    </td>
-                                     <td>
-                                           ";
-            // line 74
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["row"]) ? $context["row"] : null), "main_picture"), "html", null, true);
-            echo " 
+                                         <a href=\"#\">Update</a>
+                                         <a href=\"#\">Delete</a>
                                     </td>
                                 </tr>
                                 ";
@@ -124,7 +87,7 @@ class __TwigTemplate_b57544b7197d561078c5c1cd82f58bfbddc554edd95ba445dcdf9ce95ae
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['row'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 78
+        // line 56
         echo "                            </table>
                     
                     </div>            
@@ -141,13 +104,16 @@ class __TwigTemplate_b57544b7197d561078c5c1cd82f58bfbddc554edd95ba445dcdf9ce95ae
 </section>
                                     
 ";
-        // line 93
+        // line 71
         $this->env->loadTemplate("./common/footer.tpl")->display($context);
+        // line 72
+        echo "
+";
     }
 
     public function getTemplateName()
     {
-        return "pages/questionList.tpl";
+        return "pages/categoryList.tpl";
     }
 
     public function isTraitable()
@@ -157,6 +123,6 @@ class __TwigTemplate_b57544b7197d561078c5c1cd82f58bfbddc554edd95ba445dcdf9ce95ae
 
     public function getDebugInfo()
     {
-        return array (  145 => 93,  128 => 78,  118 => 74,  112 => 71,  106 => 68,  100 => 65,  94 => 62,  88 => 59,  82 => 56,  78 => 54,  74 => 53,  21 => 2,  19 => 1,);
+        return array (  110 => 72,  108 => 71,  91 => 56,  77 => 48,  71 => 45,  67 => 43,  63 => 42,  21 => 2,  19 => 1,);
     }
 }

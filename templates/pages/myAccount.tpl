@@ -23,20 +23,25 @@
                     <div class="photo-form-wrapper text-center">
                         <form id="myAccountForm">   
                             <table class="table">
-                                <td>
-                                    <tr>
+                                <tr>
+                                    <td>
                                              Email: 
                                        <a href="#" id="email" name="email" data-type="text" data-pk="name" data-url="/ajax/updateMyAccount" data-title="Enter username" style="disabled: true;" >{{userDetail.email}}</a>
+                                    </td>
                                     </tr>
+                                    
                                     <tr>
+                                        <td>
                                              First Name: 
                                        <a href="#" id="firstName" name="firstName" data-type="text" data-pk="name" data-url="/ajax/updateMyAccount" data-title="Enter first name">{{userDetail.firstName}}</a>
+                                        </td>
                                     </tr>
                                     <tr>
+                                        <td>
                                             Last Name: 
                                    <a href="#" id="lastName" name="lastName" data-type="text" data-pk="name" data-url="/ajax/updateMyAccount" data-title="Enter last name">{{userDetail.lastName}}</a>
+                                        </td>
                                     </tr>
-                                 </td> 
                             </table>
                                    
                                         <a href="/editMyAccount">

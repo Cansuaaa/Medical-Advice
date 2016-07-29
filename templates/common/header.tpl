@@ -25,8 +25,15 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
         <script src="/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+        <script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
+         <script>
+  tinymce.init({
+    selector: '#content'
+  });
+  </script>
+
     </head>
-    <body>
+    <body id="bd">
     	<div class="loader" >
     		<div class="spinner">
 			  <div class="double-bounce1"></div>
@@ -54,16 +61,47 @@
                                                                  {% else %} 
                                                                 <li><a href="/logout">Logout</a></li>
                                                                 <li><a href="/myAccount">My account</a></li>
-
-                                                            <button class="btn-link btn-default dropdown-toggle" type="button" data-toggle="dropdown">Questions
-                                                            <span class="caret"></span></button>
-                                                            <ul class="dropdown-menu">
-                                                                <li><a href="/questionList">QuestionList</a></li>
+                                                                <li><a href="/categoryList">Categories' list</a></li>
+                                                                <li><a href="/addCategory">Add Category</a></li>
+                                                                <li><a href="/questionList">Questions' list</a></li>
                                                                 <li><a href="/addQuestion">Add Question</a></li>
-                                                            </ul>
-
+                                                                    {% endif %} 
                                                                 
-                                                                 {% endif %} 
+                                                           <!-- <button class="btn-link btn-link dropdown-toggle" type="button" data-toggle="dropdown">Categories
+                                                                <span class="caret"></span></button>
+                                                                <ul class="dropdown-menu">
+                                                                    <table>
+                                                                        <tr>
+                                                                            <li>
+                                                                                <a href="/categoryList">Categories' list</a>
+                                                                            </li>
+                                                                        </tr>
+                                                                            <
+                                                                        <tr>
+                                                                        </tr>
+                                                                    </table>
+                                                                </ul>
+
+                                                              <button class="btn-link btn-link dropdown-toggle" type="button" data-toggle="dropdown">Questions
+                                                                <span class="caret2"></span></button>
+                                                                <ul class="dropdown-menu">
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <li><a href="/addQuestion">Add Question</a></li>
+                                                                            </td>
+                                                                        </tr>
+                                                                    
+                                                                        <tr>
+                                                                            <td>
+                                                                                <li><a href="/questionList">Questions' list</a></li>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </ul> -->
+                                                               
+
+                                                                 
                                                                 <!--START OF DROPDOWN LINKS
 								<li class="has-dropdown"><a href="#">Dropdown</a>
 									<ul class="subnav">
@@ -140,8 +178,7 @@
 									</div>
 								</li>
                                                                 END OF DROPDOWN LINKS--> 
-								
-							</ul>
+                                                        </ul>
 		
 							<ul class="social-icons text-right">
 								<li>

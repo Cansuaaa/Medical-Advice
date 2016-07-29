@@ -42,29 +42,34 @@ class __TwigTemplate_dc35536f4ec51135399b8d24f48520ecd8d9303dbbf278aaefe47e84765
                     <div class=\"photo-form-wrapper text-center\">
                         <form id=\"myAccountForm\">   
                             <table class=\"table\">
-                                <td>
-                                    <tr>
+                                <tr>
+                                    <td>
                                              Email: 
                                        <a href=\"#\" id=\"email\" name=\"email\" data-type=\"text\" data-pk=\"name\" data-url=\"/ajax/updateMyAccount\" data-title=\"Enter username\" style=\"disabled: true;\" >";
         // line 29
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["userDetail"]) ? $context["userDetail"] : null), "email"), "html", null, true);
         echo "</a>
+                                    </td>
                                     </tr>
+                                    
                                     <tr>
+                                        <td>
                                              First Name: 
                                        <a href=\"#\" id=\"firstName\" name=\"firstName\" data-type=\"text\" data-pk=\"name\" data-url=\"/ajax/updateMyAccount\" data-title=\"Enter first name\">";
-        // line 33
+        // line 36
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["userDetail"]) ? $context["userDetail"] : null), "firstName"), "html", null, true);
         echo "</a>
+                                        </td>
                                     </tr>
                                     <tr>
+                                        <td>
                                             Last Name: 
                                    <a href=\"#\" id=\"lastName\" name=\"lastName\" data-type=\"text\" data-pk=\"name\" data-url=\"/ajax/updateMyAccount\" data-title=\"Enter last name\">";
-        // line 37
+        // line 42
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["userDetail"]) ? $context["userDetail"] : null), "lastName"), "html", null, true);
         echo "</a>
+                                        </td>
                                     </tr>
-                                 </td> 
                             </table>
                                    
                                         <a href=\"/editMyAccount\">
@@ -86,17 +91,17 @@ class __TwigTemplate_dc35536f4ec51135399b8d24f48520ecd8d9303dbbf278aaefe47e84765
                                        
                                             
                                     <input style=\"background-color:orange\" name=\"email\"  type=\"text\" value=\"";
-        // line 60
+        // line 65
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["userDetail"]) ? $context["userDetail"] : null), "email"), "html", null, true);
         echo "\" disabled><br></td>       
                                     <input style=\"background-color:orange\" name=\"password\"   placeholder=\"Password\" type=\"text\" value=\"\">
                                     <input style=\"background-color:orange\" name=\"rePassword\" placeholder=\"Confirm your password\" type=\"text\" value=\"\">
                                     <input style=\"background-color:orange\" name=\"firstName\"   placeholder=\"First name\" type=\"text\"  value=\"";
-        // line 63
+        // line 68
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["userDetail"]) ? $context["userDetail"] : null), "firstName"), "html", null, true);
         echo "\">
                                     <input style=\"background-color:orange\" name=\"lastName\"    placeholder=\"Last name\" type=\"text\" value=\"";
-        // line 64
+        // line 69
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["userDetail"]) ? $context["userDetail"] : null), "lastName"), "html", null, true);
         echo "\">
                                     <input  class=\"btn-filled\" text=\"centered\" style=\"background-color: orangered\"  value=\"Submit\" type=\"submit\">
@@ -117,7 +122,7 @@ class __TwigTemplate_dc35536f4ec51135399b8d24f48520ecd8d9303dbbf278aaefe47e84765
 </section>
 
 ";
-        // line 82
+        // line 87
         $this->env->loadTemplate("./common/footer.tpl")->display($context);
     }
 
@@ -133,6 +138,6 @@ class __TwigTemplate_dc35536f4ec51135399b8d24f48520ecd8d9303dbbf278aaefe47e84765
 
     public function getDebugInfo()
     {
-        return array (  121 => 82,  100 => 64,  96 => 63,  90 => 60,  64 => 37,  57 => 33,  50 => 29,  21 => 2,  19 => 1,);
+        return array (  126 => 87,  105 => 69,  101 => 68,  95 => 65,  69 => 42,  60 => 36,  50 => 29,  21 => 2,  19 => 1,);
     }
 }

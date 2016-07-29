@@ -4,13 +4,7 @@ namespace App\Models\Question;
 use \App\Library\Helpers;
 
 class QuestionListModel
-{
-  
-   
-    public function __construct()
-    { 
-    }
-    
+{   
     public function questionList() {
         
         $app = \Yee\Yee::getInstance();

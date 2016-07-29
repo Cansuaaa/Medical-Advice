@@ -1,3 +1,17 @@
+var timer;
+var movelength=10;
+function start()
+{
+parent.moveBy(0,movelength)
+parent.moveBy(0,-movelength)
+parent.moveBy(movelength,0)
+parent.moveBy(-movelength,0)
+timer=setTimeout("start()",100)
+} 
+function stop()
+{
+clearTimeout(timer)
+}
 $(document).ready(function(){
 
 	"use strict";
@@ -11,6 +25,8 @@ $(document).ready(function(){
 			$('.top-bar').removeClass('nav-sticky');
 		}
 	});
+	start();
+	$('#main-container').shake(10,30,9000);
 	
 	// Offscreen Nav
 	

@@ -24,7 +24,7 @@
                         <form id="myAccountForm">   
                             Password: 
                                 <input style="background-color:orange" name="password"   placeholder="Password" type="password" value="">
-                                 New password: 
+                            New password: 
                                 <input style="background-color:orange" name="newPassword"   placeholder="New password" type="password" value="">
                             Confirm Password: 
                                 <input style="background-color:orange" name="rePassword" placeholder="Confirm your password" type="password" value="">
