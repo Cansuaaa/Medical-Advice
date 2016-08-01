@@ -8,7 +8,7 @@
     <div class="main-container" style="background-color: #c0a16b">
         <div class="row">
 
-            <div class="col-sm-12 text-center">
+           <div class="col-sm-12 text-center">
                 <h1 style="background-color: rgb(189, 21, 21);">My question </h1>
                 
             </div> 

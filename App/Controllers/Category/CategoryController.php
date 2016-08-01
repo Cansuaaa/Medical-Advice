@@ -1,4 +1,3 @@
-
 <?php
 use Yee\Managers\Controller\Controller;
 use Yee\Managers\CacheManager;

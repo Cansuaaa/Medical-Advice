@@ -15,8 +15,8 @@ class LogoutController extends Controller
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
         
-     session_destroy();
-     $app->redirect('/');
+        session_destroy();
+        $app->redirect('/');
      
      
      

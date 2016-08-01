@@ -3,27 +3,35 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/html/js/category.js</file>
-            <file>file:/var/www/html/App/Models/Question/QuestionListModel.php</file>
-            <file>file:/var/www/html/index.php</file>
             <file>file:/var/www/html/js/jquery.tinymce.min.js</file>
             <file>file:/var/www/html/App/Models/Category/CategoryModel.php</file>
-            <file>file:/var/www/html/templates/pages/addCategory.tpl</file>
-            <file>file:/var/www/html/js/question.js</file>
+            <file>file:/var/www/html/templates/pages/login.tpl</file>
             <file>file:/var/www/html/su/test.php</file>
             <file>file:/var/www/html/App/Controllers/ajax/AjaxController.php</file>
             <file>file:/var/www/html/templates/pages/categoryList.tpl</file>
+            <file>file:/var/www/html/templates/pages/addQuestion.tpl</file>
+            <file>file:/var/www/html/App/Controllers/MyController/MyAccountController.php</file>
+            <file>file:/var/www/html/logs/2016-07-29.log</file>
+            <file>file:/var/www/html/App/Models/Category/CategorySelectModel.php</file>
+            <file>file:/var/www/html/App/Controllers/LogOut/LogoutController.php</file>
+            <file>file:/var/www/html/templates/common/footer.tpl</file>
+            <file>file:/var/www/html/Yee/Yee.php</file>
+            <file>file:/var/www/html/templates/pages/myAccount.tpl</file>
+            <file>file:/var/www/html/js/category.js</file>
+            <file>file:/var/www/html/index.php</file>
+            <file>file:/var/www/html/App/Controllers/Signup/SignupController.php</file>
+            <file>file:/var/www/html/App/Controllers/Activation/ActivationController.php</file>
+            <file>file:/var/www/html/templates/pages/addCategory.tpl</file>
+            <file>file:/var/www/html/js/question.js</file>
             <file>file:/var/www/html/su/index.php</file>
             <file>file:/var/www/html/App/Controllers/Category/CategoryController.php</file>
             <file>file:/var/www/html/App/Controllers/Question/QuestionController.php</file>
-            <file>file:/var/www/html/logs/2016-07-29.log</file>
-            <file>file:/var/www/html/App/Models/Category/CategorySelectModel.php</file>
             <file>file:/var/www/html/templates/pages/editMyAccount.tpl</file>
             <file>file:/var/www/html/templates/common/header.tpl</file>
-            <file>file:/var/www/html/templates/common/footer.tpl</file>
             <file>file:/var/www/html/App/Controllers/Login/LoginController.php</file>
+            <file>file:/var/www/html/templates/pages/questionList.tpl</file>
             <file>file:/var/www/html/App/Controllers/Home/HomeController.php</file>
-            <file>file:/var/www/html/Yee/Yee.php</file>
+            <file>file:/var/www/html/templates/pages/home.tpl</file>
         </group>
     </open-files>
 </project-private>
