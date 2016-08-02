@@ -23,8 +23,8 @@ if( __DEBUG__ )
                     'default' => array(
                         'database.host' => 'localhost',
                         'database.user' => 'root',
-                        'database.pass' => 'root+',
-                        'database.name' => 'MedicalAdvice',
+                        'database.pass' => '',
+                        'database.name' => 'medicaladvice',
                         'database.port' => 3306
                     )
                 )
